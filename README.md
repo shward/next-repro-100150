@@ -25,6 +25,9 @@ node post.mjs
 | next | result |
 | --- | --- |
 | 15.5.27 | SHORT on about half the posts |
-| 16.0.0 and later tested (16.4.0, 16.5.0-canary.10) | not reproduced |
+| 16.0.0 | SHORT on about half the posts |
+| 16.1.7, 16.2.0, 16.3.0, 16.4.0, 16.5.0-canary.10 | all ok |
+
+For 16.x set `react` and `react-dom` to 19.2.0.
 
 Patching `await` into `requestData.body.finalize()` in `node_modules/next/dist/server/next-server.js` on 15.5.27 makes all posts pass.
